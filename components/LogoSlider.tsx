@@ -2,7 +2,6 @@
 
 const items = ["ADOPT", "NURTURE", "DELIVER"];
 
-// Build a long repeated sequence: solid, outline, solid, outline...
 const sequence = [...items, ...items, ...items, ...items];
 
 export default function MarqueeTicker() {

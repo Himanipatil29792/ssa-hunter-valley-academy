@@ -62,7 +62,6 @@ export default function SetLocations() {
       `}</style>
 
       <section className="w-full flex flex-col md:flex-row min-h-[480px] py-10">
-        {/* Left green panel */}
         <div
           className="w-full md:w-[40%] flex flex-col justify-center px-10 py-12 bg-gradient-to-br from-[#003366] via-[#2d6a3f] to-[#7ec832]"
         >
@@ -82,7 +81,7 @@ export default function SetLocations() {
 
           <div className="space-y-4">
             {locations.map((loc, i) => (
-              <div key={i} className="flex items-center gap-3">
+              <div key={i} className="flex items-center gap-3 flex-wrap">
                 <LocationIcon />
                 <span className="text-white text-sm font-semibold whitespace-nowrap">
                   {loc.name}
@@ -96,8 +95,6 @@ export default function SetLocations() {
           </div>
         </div>
 
-        {/* Right Swiper */}
-       {/* Right Swiper */}
         <div className="w-full md:w-[60%] h-[550px]">
           <Swiper
             modules={[Pagination, Autoplay]}

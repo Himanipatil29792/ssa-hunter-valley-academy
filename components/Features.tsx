@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 
-
-
 const tabs = {
   "About Us": {
     title: "About Us",
@@ -85,7 +83,6 @@ export default function Features() {
 
   return (
     <section className="relative overflow-hidden py-15 bg-[#f8f8f8]">
-        {/* Vertical Lines */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="h-full max-w-7xl mx-auto flex justify-between">
           {[1, 2, 3, 4].map((item) => (
@@ -94,7 +91,6 @@ export default function Features() {
         </div>
       </div>
 
-      {/* Decorative Left Shape */}
       <div className="absolute hidden lg:block">
         <div
           className="w-[280px] h-[340px] bg-[#DDE7B6]"
@@ -106,8 +102,7 @@ export default function Features() {
       </div>
 
       <div className="container mx-auto px-5">
-        {/* Heading */}
-        <div className="w-1/2 mx-auto text-center">
+        <div className="lg:w-1/2 md:w-4/5 mx-auto text-center">
           <p className="text-base md:text-xl leading-relaxed">
             To be the first venue in the world to have{" "}
             <span className="text-[#9BB80D] font-bold">
@@ -118,7 +113,6 @@ export default function Features() {
           </p>
         </div>
 
-        {/* Tabs */}
         <div className="flex justify-center flex-wrap gap-8 mt-10">
           {Object.keys(tabs).map((tab) => (
             <button
@@ -135,14 +129,12 @@ export default function Features() {
           ))}
         </div>
 
-        {/* Content */}
         <div
           key={activeTab}
           className="grid lg:grid-cols-2 gap-12 mt-10 items-center"
         >
-          {/* Left */}
           <div>
-            <div className="flex items-start gap-2 mt-15">
+            <div className="flex items-start gap-2 lg:mt-15 !md:mt-0">
               <h2 className="text-4xl md:text-5xl font-bold">
                 {current.title}
               </h2>
@@ -154,7 +146,6 @@ export default function Features() {
               {current.description}
             </p>
 
-            {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
               {current.stats.map((item) => (
                 <div key={item.label}>
@@ -171,7 +162,6 @@ export default function Features() {
             </button>
           </div>
 
-          {/* Right Images */}
           <div className="grid grid-cols-3 gap-3">
             <div className="col-span-2">
               <img

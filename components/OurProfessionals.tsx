@@ -55,7 +55,6 @@ export default function OurProfessionals() {
                 />
               </div>
 
-              {/* Info */}
               <div className="mt-4">
                 <h3 className="text-xl font-bold text-[#1a1a1a]">
                   {person.name}

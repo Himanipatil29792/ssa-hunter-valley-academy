@@ -26,7 +26,6 @@ export function CoachesEventsBanner() {
           >
             Read More
             <span className="flex items-center">
-              {/* <span className="w-8 h-[1.5px] bg-white inline-block" /> */}
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" className="-ml-1">
                 <polyline points="5 12 19 12" stroke="white" strokeWidth="1.5" />
                 <polyline points="13 6 19 12 13 18" stroke="white" strokeWidth="1.5" fill="none" />

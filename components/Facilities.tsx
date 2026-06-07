@@ -35,7 +35,6 @@ export default function Facilities() {
       <section className="relative bg-[#f7f7f7] pb-10 px-8 overflow-hidden">
         <GradientBackground />
 
-        {/* Heading */}
         <div className="relative max-w-[1200px] mx-auto mt-15">
           <h2 className="text-4xl font-bold text-[#1a1a1a] flex items-start gap-2 leading-tight">
               Facilities
@@ -48,7 +47,6 @@ export default function Facilities() {
             </p>
         </div>
 
-        {/* Cards */}
         <div className="relative z-20 max-w-[1200px] mx-auto px-5">
           <div className="grid lg:grid-cols-2 gap-x-10 gap-y-10">
             {facilities.map((item, index) => (
@@ -56,7 +54,6 @@ export default function Facilities() {
                 key={index}
                 className={index > 1 ? "lg:mt-2" : ""}
               >
-                {/* Video */}
                 <div
                   className={`relative overflow-hidden rounded-[24px] group ${
                     index % 2 === 0
@@ -90,7 +87,6 @@ export default function Facilities() {
                   </div>
                 </div>
 
-                {/* Content */}
                 <div
                   className={`mt-3 text-white ${
                     index % 2 === 0
@@ -124,7 +120,6 @@ export default function Facilities() {
         </div>
       </section>
 
-      {/* Modal */}
       {selectedVideo && (
         <div className="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-4">
           <div className="relative w-full max-w-5xl">

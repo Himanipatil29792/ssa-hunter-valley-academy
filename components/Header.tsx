@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header className="container py-2">
-      <div className="d-flex justify-content-between align-items-center">
+      <div className="d-flex justify-content-between align-items-center flex-wrap">
           <div className="flex-shrink-0 w-48 pt-1">
             <div className="flex items-center gap-0 leading-none mb-1">
               <div className="relative">

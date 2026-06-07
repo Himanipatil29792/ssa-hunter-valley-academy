@@ -55,10 +55,8 @@ export default function TestimonialSlider() {
                 backgroundImage: `url(${item.image})`,
               }}
             >
-              {/* Overlay */}
               <div className="absolute inset-0 bg-black/35" />
 
-              {/* Optional curved lines */}
               <div
                 className="absolute inset-0 opacity-30"
                 style={{
@@ -66,8 +64,6 @@ export default function TestimonialSlider() {
                     "repeating-radial-gradient(circle at left top, transparent 0px, transparent 18px, rgba(255,255,255,.4) 20px)",
                 }}
               />
-
-              {/* Content */}
               <div className="relative z-10 container mx-auto px-6 lg:px-20 flex items-center min-h-[450px]">
                 <div className="max-w-4xl text-white">
                   <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
