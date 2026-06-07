@@ -79,7 +79,7 @@ const tabs = {
 export default function Features() {
   const [activeTab, setActiveTab] = useState("About Us");
 
-  const current = tabs[activeTab];
+  const current = tabs[activeTab as keyof typeof tabs];
 
   return (
     <section className="relative overflow-hidden py-15 bg-[#f8f8f8]">
