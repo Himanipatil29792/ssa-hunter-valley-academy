@@ -1,0 +1,27 @@
+h1 {
+  font-size: 3vw;
+}
+
+p {
+  font-size: 1vw;
+}
+
+.btn {
+  padding: 1vw 2vw;
+}
+
+section {
+  padding: 4vw 0;
+}
+
+@media (max-width:768px){
+
+h1{
+font-size:7vw;
+}
+
+p{
+font-size:3.5vw;
+}
+
+}
