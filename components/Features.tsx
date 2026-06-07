@@ -157,9 +157,12 @@ export default function Features() {
               ))}
             </div>
 
-            <button className="!mt-5 bg-[#9BB80D] text-white px-8 py-2 !rounded-full">
-              Read More
-            </button>
+          <button
+            onClick={() => window.location.reload()}
+            className="!mt-5 bg-[#9BB80D] text-white px-8 py-2 !rounded-full"
+          >
+            Read More
+          </button>
           </div>
 
           <div className="grid grid-cols-3 gap-3">

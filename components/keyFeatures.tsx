@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 const ArrowRight = () => (
   <svg
@@ -36,9 +37,11 @@ const WaveBg = () => (
 );
 
 const RegisterButton = () => (
-  <button className="bg-[#8DC63F] text-white font-semibold px-8 py-2 !rounded-full text-sm hover:bg-[#7ab535] transition-colors duration-200 whitespace-nowrap">
-    Register Now
-  </button>
+  <Link href="/register">
+    <button className="bg-[#8DC63F] text-white font-semibold px-8 py-2 !rounded-full text-sm hover:bg-[#7ab535] transition-colors duration-200 whitespace-nowrap">
+      Register Now
+    </button>
+  </Link>
 );
 
 const features = [

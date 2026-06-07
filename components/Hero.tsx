@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const LocationIcon = () => (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="flex-shrink-0 mt-0.5">
     <path
@@ -56,9 +58,11 @@ function HeroBanner() {
             Adopt • Nurture • Deliver
           </p>
 
+         <Link href="/register">
           <button className="mt-4 border !border-[#93AD1E] !rounded-full px-9 !py-3 hover:bg-[#93AD1E] hover:text-black transition duration-300">
             Register Now
           </button>
+        </Link>
         </div>
       </div>
 

@@ -2,19 +2,19 @@
 
 const items = ["ADOPT", "NURTURE", "DELIVER"];
 
-const sequence = [...items, ...items, ...items, ...items];
+const sequence = [...items, ...items];
 
 export default function MarqueeTicker() {
   return (
     <div className="w-full overflow-hidden bg-white py-20 select-none">
-      <div className="flex animate-marquee whitespace-nowrap">
+      <div className="marquee-track flex whitespace-nowrap">
         {[...sequence, ...sequence].map((word, i) => (
           <span key={i} className="flex items-center">
             <span
-              className={`text-4xl md:text-5xl font-extrabold tracking-widest uppercase mx-4 ${
+              className={`text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-widest uppercase mx-4 ${
                 i % 2 === 0
-                  ? "text-[#8DC63F]"                          // solid fill
-                  : "text-transparent"                         // outline only
+                  ? "text-[#8DC63F]"
+                  : "text-transparent"
               }`}
               style={
                 i % 2 !== 0
@@ -26,22 +26,41 @@ export default function MarqueeTicker() {
             >
               {word}
             </span>
-            <span className="text-[#8DC63F] text-3xl font-bold mx-2">·</span>
+
+            <span className="text-[#8DC63F] text-2xl md:text-3xl font-bold mx-2">
+              ·
+            </span>
           </span>
         ))}
       </div>
 
       <style jsx>{`
+        .marquee-track {
+          animation: marquee 14s linear infinite;
+          width: max-content;
+        }
+
         @keyframes marquee {
-          0% {
-            transform: translateX(0%);
+          from {
+            transform: translateX(0);
           }
-          100% {
+          to {
             transform: translateX(-50%);
           }
         }
-        .animate-marquee {
-          animation: marquee 18s linear infinite;
+
+        /* Tablet */
+        @media (max-width: 768px) {
+          .marquee-track {
+            animation: marquee 8s linear infinite;
+          }
+        }
+
+        /* Mobile */
+        @media (max-width: 480px) {
+          .marquee-track {
+            animation: marquee 6s linear infinite;
+          }
         }
       `}</style>
     </div>
