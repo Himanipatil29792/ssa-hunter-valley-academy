@@ -5,7 +5,6 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import location1 from "../images/location1.jpg"
-import location2 from "../images/location2.jpg"
 import location3 from "../images/location3.jpg"
 import location4 from "../images/location4.jpg"
 
@@ -21,7 +20,6 @@ const locations = [
 
 const slides = [
    { src: location1, alt: "Hunter Valley aerial view" },
-  { src: location2, alt: "Rydges Resort Hunter Valley" },
   { src: location3, alt: "Cressnock Airport" },
   { src: location4, alt: "Cressnock CBD" },
 ];
